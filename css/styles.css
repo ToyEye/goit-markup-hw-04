@@ -1,4 +1,4 @@
-/* Глобальные стили */
+﻿/* Глобальные стили */
 * {
   box-sizing: border-box;
 }
@@ -58,6 +58,21 @@ ul {
 
 .btn {
   cursor: pointer;
+}
+
+/* ICONS SVG */
+
+.mail-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+.phone-icon {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /* HEADER INDEX*/
@@ -166,6 +181,9 @@ ul {
     url("../images/background.jpg");
   padding-top: 200px;
   padding-bottom: 200px;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .hero {
@@ -207,6 +225,15 @@ ul {
 .about .item {
   flex-basis: calc((100% - 4 * 30px) / 4);
   margin-left: 30px;
+}
+
+.about-icon-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
 }
 
 .about .item:last-child {
@@ -277,6 +304,9 @@ ul {
 
 .team-cards .cards {
   margin-right: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-cards .cards:last-child {
@@ -305,6 +335,13 @@ ul {
   line-height: 1.17;
 }
 
+.team-social-icon {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: space-between;
+}
+
 /* MAIN PORTFOLIO */
 
 .filters .buttons {
@@ -322,6 +359,7 @@ ul {
   padding: 6px 22px;
   background-color: var(--bgc-btn);
   border: none;
+  border-radius: 4px;
 }
 
 .buttons .item {
@@ -336,6 +374,8 @@ ul {
 .filters .btn:hover {
   background-color: var(--activ);
   color: var(--lite-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* КАРТОЧКИ */
@@ -353,9 +393,10 @@ ul {
   flex-basis: calc((100% - 3 * 30px) / 3);
 }
 
-/* .cards-list .item:nth-child(3n + 3) {
-  margin-right: 0;
-} */
+.cards-list .item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .cards-list .item:nth-child(n + 7) {
   margin-bottom: 0;
