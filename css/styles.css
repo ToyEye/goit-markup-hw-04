@@ -15,7 +15,8 @@ p {
   padding: 0;
 }
 
-svg {
+svg,
+img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -39,10 +40,6 @@ body {
   --cards-border-color: #eeeeee;
   --bgc-btn: #f5f4fa;
   --hero-overlay-color: rgba(47, 48, 58, 0.4);
-}
-
-img {
-  display: block;
 }
 
 a {
@@ -127,6 +124,10 @@ ul {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
+}
+
+.item .link {
+  display: flex;
 }
 
 .contact .link {
@@ -362,6 +363,14 @@ ul {
 
 .clients-logo {
   display: flex;
+}
+
+.clients-logo .link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  /* justify-content: center; */
+  align-items: center;
 }
 
 /* MAIN PORTFOLIO */
