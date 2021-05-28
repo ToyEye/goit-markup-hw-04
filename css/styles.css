@@ -15,6 +15,12 @@ p {
   padding: 0;
 }
 
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 body {
   color: var(--accent-color);
   font-family: roboto, sans-serif;
@@ -337,9 +343,25 @@ ul {
 
 .team-social-icon {
   display: flex;
-  width: 44px;
+  width: 206px;
   height: 44px;
   justify-content: space-between;
+}
+
+/* ПОСТОЯННЫЕ КЛИЕНТЫ */
+
+.title-clients {
+  color: var(--primary-color);
+  font-family: roboto, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.171;
+  letter-spacing: 3%;
+  text-align: center;
+}
+
+.clients-logo {
+  display: flex;
 }
 
 /* MAIN PORTFOLIO */
