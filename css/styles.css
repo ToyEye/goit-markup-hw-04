@@ -40,6 +40,8 @@ body {
   --cards-border-color: #eeeeee;
   --bgc-btn: #f5f4fa;
   --hero-overlay-color: rgba(47, 48, 58, 0.4);
+  --icon-color: #afb1b8;
+  --bgc-icon-footer: rgba(255, 255, 255, 0.1);
 }
 
 a {
@@ -330,7 +332,7 @@ ul {
 }
 
 .cards {
-  height: 368px;
+  height: 428px;
   width: 270px;
   background-color: var(--lite-color);
   text-align: center;
@@ -342,13 +344,44 @@ ul {
   line-height: 1.17;
 }
 
-.team-social-icon {
+/* SOCIAL ICONS */
+
+.team-icon-list {
   display: flex;
-  width: 206px;
-  height: 44px;
-  justify-content: space-between;
+  justify-content: center;
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-left: 32px;
 }
 
+.team-icon-list .icon-item {
+  margin-right: 10px;
+}
+
+.team-icon-list .icon-item:last-child {
+  margin-right: 0;
+}
+
+.social-link {
+  display: flex;
+  max-width: 44px;
+  max-height: 44px;
+  padding: 12px;
+  color: var(--icon-color);
+}
+
+.social-link:hover,
+.social-link:focus {
+  color: var(--lite-color);
+  background-color: var(--activ);
+  border-radius: 50%;
+}
+
+.icon-item .icon-social {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
 /* ПОСТОЯННЫЕ КЛИЕНТЫ */
 
 .title-clients {
@@ -357,20 +390,35 @@ ul {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.171;
-  letter-spacing: 3%;
+  letter-spacing: 0.03em;
   text-align: center;
+  margin-bottom: 50px;
 }
 
-.clients-logo {
+.clients-list {
   display: flex;
+  justify-content: space-between;
 }
 
-.clients-logo .link {
+.client-link {
   display: flex;
-  width: 170px;
-  height: 92px;
-  /* justify-content: center; */
+  justify-content: space-between;
   align-items: center;
+  color: var(--icon-color);
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+}
+
+.client-link:hover,
+.client-link:focus {
+  box-shadow: none;
+  color: var(--activ);
+}
+
+.icon-clients {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
 }
 
 /* MAIN PORTFOLIO */
@@ -502,4 +550,54 @@ ul {
 
 .address .link {
   color: var(--contacts-footer-color);
+}
+
+/* Правая часть футера */
+
+.footer-flex {
+  display: flex;
+}
+
+.invite {
+  width: 206px;
+  margin-left: 70px;
+}
+
+.invite .title {
+  font-family: roboto, sans-serif;
+  font-weight: 70;
+  font-size: 14px;
+  line-height: 1.172;
+  letter-spacing: 0.03em;
+  color: var(--lite-color);
+  margin-bottom: 20px;
+}
+
+.foot-icon-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--lite-color);
+  background-color: var(--bgc-icon-footer);
+  max-width: 44px;
+  max-height: 44px;
+  padding: 12px;
+  border: 1px solid var(--bgc-icon-footer);
+  border-radius: 50%;
+}
+
+.footer-link:focus,
+.footer-link:hover {
+  background-color: var(--activ);
+}
+
+.svg-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
