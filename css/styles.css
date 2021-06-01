@@ -407,11 +407,12 @@ ul {
   color: var(--icon-color);
   border: 1px solid var(--icon-color);
   border-radius: 4px;
+  padding: 16px 32px;
 }
 
 .client-link:hover,
 .client-link:focus {
-  box-shadow: none;
+  border: 1px solid var(--activ);
   color: var(--activ);
 }
 
@@ -561,6 +562,7 @@ ul {
 .invite {
   width: 206px;
   margin-left: 70px;
+  margin-top: 10px;
 }
 
 .invite .title {
