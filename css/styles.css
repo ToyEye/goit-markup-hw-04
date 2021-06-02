@@ -243,6 +243,12 @@ ul {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
+  background-color: var(--bgc-btn);
+}
+
+.about-icon-section .icon {
+  width: 70px;
+  height: 70px;
 }
 
 .about .item:last-child {
@@ -250,11 +256,13 @@ ul {
 }
 
 .about .title {
+  font-family: roboto, sans-serif;
   color: var(--primary-color);
-  font-weight: 700;
+  font-weight: bold;
   font-size: 14px;
   line-height: 1.7;
   margin-bottom: 10px;
+  letter-spacing: 0.03em;
 }
 
 .about .feature {
@@ -294,7 +302,7 @@ ul {
 /* TEAM INDEX*/
 
 .container-team {
-  background-color: #ececec;
+  background-color: var(--bgc-btn);
 }
 
 .team .title {
@@ -329,6 +337,7 @@ ul {
   line-height: 1.17;
   padding-top: 30px;
   padding-bottom: 10px;
+  letter-spacing: 0.03em;
 }
 
 .cards {
@@ -567,7 +576,7 @@ ul {
 
 .invite .title {
   font-family: roboto, sans-serif;
-  font-weight: 70;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.172;
   letter-spacing: 0.03em;
